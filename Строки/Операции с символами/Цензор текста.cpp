@@ -35,7 +35,7 @@ int main() {
 			
 			bool check{ true };
 			for (size_t i{ start }; i < end; i++) {
-				if (word[i - start] != text[i]) {
+				if (lower_word[i - start] != std::tolower(text[i])) {
 					check = false;
 					break;
 				}
